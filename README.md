@@ -18,7 +18,7 @@ The following filtering steps were performed:
 * `langdetect` is used to extract English texts only
 * Only texts from >= 1800 and < 1900 are used
 
-The final corpus has a size of 24GB and tokens. An overview of the complete filtering steps can be found [here]().
+The final corpus has a size of 24GB and tokens. An overview of the complete filtering steps can be found [here](corpus.md).
 
 # Vocab Generation
 
@@ -26,16 +26,16 @@ For BERT/ELECTRA and ConvBERT we use the same 32k wordpiece vocabulary, trained 
 
 For T5 a 32k vocabulary is trained with `sentencepiece`.
 
-All details can be found [here]().
+All details can be found [here](vocab.md).
 
 # Pretraining
 
 All pretraining steps (incl. training data generation) are document in the model specific cheatsheets:
 
-* BERT
-* ConvBERT
-* ELECTRA
-* T5
+* [BERT](pretraining_bert.md)
+* [ConvBERT](pretraining_electra.md)
+* [ELECTRA](pretraining_convbert.md)
+* [T5](pretraining_t5.md)
 
 We pretrain all models on a v3-32 TPU pod from the awesome [TPU Research Cloud](https://sites.research.google/trc/about/) program.
 
@@ -58,7 +58,7 @@ The following models are available on the Hugging Face Model Hub (currently flag
 
 All models are evaluated on the [AjMC](https://github.com/hipe-eval/HIPE-2022-data/blob/main/documentation/README-ajmc.md) dataset from [HIPE-2022 Shared Task](https://hipe-eval.github.io/HIPE-2022/).
 
-The Flair library is used to load the dataset and a basic hyper-parameter search is performed. More details can be found [here]().
+The Flair library is used to load the dataset and a basic hyper-parameter search is performed. More details can be found [here](flair-fine-tuning.md).
 
 Here's an overview of the results on the development split - F1-Score over 5 runs is reported:
 
