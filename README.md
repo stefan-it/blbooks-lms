@@ -58,7 +58,7 @@ The following models are available on the Hugging Face Model Hub (currently flag
 
 All models are evaluated on the [AjMC](https://github.com/hipe-eval/HIPE-2022-data/blob/main/documentation/README-ajmc.md) dataset from [HIPE-2022 Shared Task](https://hipe-eval.github.io/HIPE-2022/).
 
-The Flair library is used to load the dataset and a basic hyper-parameter search is performed. More details can be found [here](flair-fine-tuning.md).
+The Flair library is used to load the dataset and a basic hyper-parameter search is performed.
 
 Here's an overview of the results on the development split - F1-Score over 5 runs is reported:
 
@@ -71,7 +71,7 @@ Here's an overview of the results on the development split - F1-Score over 5 run
 | T5-Base  | `bs4-e10-lr0.00016` | 85.58 ± 0.62
 | T5-Large | `bs4-e10-lr0.00016` | 85.91 ± 1.09
 
-For T5, encoder-only fine-tuning is performed.
+For T5, encoder-only fine-tuning is performed. More details can be found [here](flair-fine-tuning.md).
 
 # Acknowledgements
 
