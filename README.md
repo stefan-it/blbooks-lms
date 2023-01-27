@@ -43,15 +43,15 @@ We pretrain all models on a v3-32 TPU pod from the awesome [TPU Research Cloud](
 
 The following models are available on the Hugging Face Model Hub (currently flagged as private):
 
-| Model Name | Link | Pretraining Time | Parameters
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------:
-| [`bigscience-historical-texts/bert-base-blbooks-cased`](https://huggingface.co/bigscience-historical-texts/bert-base-blbooks-cased)                                   | 1.64d  |   110,617,344
-| [`bigscience-historical-texts/electra-base-blbooks-cased-discriminator`](https://huggingface.co/bigscience-historical-texts/electra-base-blbooks-cased-discriminator) | 2.69d  |   110,026,752
-| [`bigscience-historical-texts/electra-base-blbooks-cased-generator`](https://huggingface.co/bigscience-historical-texts/electra-base-blbooks-cased-generator)         | 2.69d  |    34,646,272
-| [`bigscience-historical-texts/convbert-base-blbooks-cased`](https://huggingface.co/bigscience-historical-texts/convbert-base-blbooks-cased)                           | 3.83d  |   106,815,624
-| [`bigscience-historical-texts/t5-efficient-blbooks-small-el32`](https://huggingface.co/bigscience-historical-texts/t5-efficient-blbooks-small-el32)                   | 0.81d  |   142,322,176
-| [`bigscience-historical-texts/t5-efficient-blbooks-base-nl36`](https://huggingface.co/bigscience-historical-texts/t5-efficient-blbooks-base-nl36)                     | 1.98d  |   619,357,440
-| [`bigscience-historical-texts/t5-efficient-blbooks-large-nl36`](https://huggingface.co/bigscience-historical-texts/t5-efficient-blbooks-large-nl36)                   | 2.98d  | 1,090,051,072
+| Model Name                                                                                                                                                            | Pretraining Time | Parameters
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------:
+| [`bigscience-historical-texts/bert-base-blbooks-cased`](https://huggingface.co/bigscience-historical-texts/bert-base-blbooks-cased)                                   | 1.64d            |   110,617,344
+| [`bigscience-historical-texts/electra-base-blbooks-cased-discriminator`](https://huggingface.co/bigscience-historical-texts/electra-base-blbooks-cased-discriminator) | 2.69d            |   110,026,752
+| [`bigscience-historical-texts/electra-base-blbooks-cased-generator`](https://huggingface.co/bigscience-historical-texts/electra-base-blbooks-cased-generator)         | 2.69d            |    34,646,272
+| [`bigscience-historical-texts/convbert-base-blbooks-cased`](https://huggingface.co/bigscience-historical-texts/convbert-base-blbooks-cased)                           | 3.83d            |   106,815,624
+| [`bigscience-historical-texts/t5-efficient-blbooks-small-el32`](https://huggingface.co/bigscience-historical-texts/t5-efficient-blbooks-small-el32)                   | 0.81d            |   142,322,176
+| [`bigscience-historical-texts/t5-efficient-blbooks-base-nl36`](https://huggingface.co/bigscience-historical-texts/t5-efficient-blbooks-base-nl36)                     | 1.98d            |   619,357,440
+| [`bigscience-historical-texts/t5-efficient-blbooks-large-nl36`](https://huggingface.co/bigscience-historical-texts/t5-efficient-blbooks-large-nl36)                   | 2.98d            | 1,090,051,072
 
 
 # Evaluation
