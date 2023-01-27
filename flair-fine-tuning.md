@@ -48,3 +48,16 @@ Best configuration: wsFalse-bs8-e10-lr5e-05
 
 Best Development Score: 85.92
 ```
+
+# Performance comparison
+
+A more detailed table shows the performance overview for all 5 runs on development dataset:
+
+| Model    | Best Configuration  | Run 1 | Run 2 | Run 3 | Run 4 | Run 5 | Averaged F1-Score
+| -------- | ------------------- | ----- | ----- | ----- | ----- | ----- | -----------------
+| BERT     | `bs8-e10-lr5e-05`   | 86.60 | 85.99 | 86.12 | 84.96 | 85.92 | 85.92 ± 0.53
+| ELECTRA  | `bs4-e10-lr5e-05`   | 85.75 | 85.58 | 86.50 | 85.14 | 84.68 | 85.53 ± 0.61
+| ConvBERT | `bs4-e10-lr5e-05`   | 87.59 | 86.02 | 86.17 | 87.12 | 85.27 | **86.43** ± 0.82
+| T5-Small | `bs4-e10-lr0.00016` | 84.81 | 83.57 | 84.46 | 85.48 | 82.26 | 84.12 ± 1.11
+| T5-Base  | `bs4-e10-lr0.00016` | 86.81 | 85.14 | 85.24 | 85.44 | 85.27 | 85.58 ± 0.62
+| T5-Large | `bs4-e10-lr0.00016` | 86.95 | 86.56 | 86.46 | 83.89 | 85.68 | 85.91 ± 1.09
