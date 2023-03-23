@@ -18,7 +18,7 @@ from flair import set_seed
 from flair.models import SequenceTagger
 from flair.trainers import ModelTrainer
 
-from utils import prepare_clef_2020_corpus, prepare_ajmc_corpus
+from utils import prepare_ajmc_corpus
 
 def run_experiment(seed, batch_size, epoch, learning_rate, hipe_datasets, json_config):
     # Config values
