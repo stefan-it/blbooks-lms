@@ -20,6 +20,8 @@ from flair.trainers import ModelTrainer
 
 from utils import prepare_ajmc_corpus
 
+from byt5_embeddings import ByT5Embeddings
+
 def run_experiment(seed, batch_size, epoch, learning_rate, hipe_datasets, json_config):
     # Config values
     # Replace it with more Pythonic solutions later!
@@ -56,13 +58,23 @@ def run_experiment(seed, batch_size, epoch, learning_rate, hipe_datasets, json_c
     print("Label Dictionary:", label_dictionary.get_items())
 
     # Embeddings
-    embeddings = TransformerWordEmbeddings(
-        model=hf_model,
-        layers=layers,
-        subtoken_pooling="first",
-        fine_tune=True,
-        use_context=context_size,
-    )
+    embeddings = None
+
+    if "byt5" in hf_model:
+        embeddings = ByT5Embeddings(
+            model=hf_model,
+            layers=layers,
+            subtoken_pooling="mean",
+            fine_tune=True,
+        )
+    else:
+        embeddings = TransformerWordEmbeddings(
+            model=hf_model,
+            layers=layers,
+            subtoken_pooling="first",
+            fine_tune=True,
+            use_context=context_size,
+        )
 
     tagger: SequenceTagger = SequenceTagger(
         hidden_size=256,
