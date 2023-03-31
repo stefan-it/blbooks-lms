@@ -64,7 +64,7 @@ def run_experiment(seed, batch_size, epoch, learning_rate, hipe_datasets, json_c
         embeddings = ByT5Embeddings(
             model=hf_model,
             layers=layers,
-            subtoken_pooling="mean",
+            subtoken_pooling="first",
             fine_tune=True,
         )
     else:
